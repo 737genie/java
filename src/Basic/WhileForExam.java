@@ -53,13 +53,9 @@ public class WhileForExam {
 		// 퀴즈: 사용자에게 3번의 기회를 줘서 로그인 성공이나 실패를 알리는 프로그램.
 		// 아이디: gunchim, 비번: 9724
 		
-		int p = 0;
-		while(p>=3) {
-			System.out.println("로그인 시도 "+p+"회");
-			System.out.println("=======================");
-			System.out.println("");
+		
 		}
 		
 	}
 
-}
+

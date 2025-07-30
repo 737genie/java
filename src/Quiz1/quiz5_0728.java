@@ -32,53 +32,16 @@ public class quiz5_0728 {
 		int ThirdButton = sc.nextInt();
 
 		
-		if (FirstButton==1) {
-			if(SecondButton==1) {
-				if (ThirdButton==1) {
-					System.out.println("==============================");
-					System.out.println("보물 상자가 열렸다!!!");
-				} else {System.out.println("보물 상자는 열리지 않았습니다.");}
-			}
-			else if (SecondButton==2) {
-				if(ThirdButton==3) {
-					System.out.println("==============================");
-					System.out.println("보물 상자가 열렸다!!!");
-				} else {System.out.println("보물 상자는 열리지 않았습니다.");}
-			}
-			else if (SecondButton==3) {
-				if (ThirdButton==2) {
-					System.out.println("==============================");
-					System.out.println("보물 상자가 열렸다!!!");
-				} else {System.out.println("보물 상자는 열리지 않았습니다.");}
-			} else {System.out.println("보물 상자는 열리지 않았습니다.");}
+		if (FirstButton==1 && SecondButton==1 && ThirdButton==1) {
+			System.out.println("==============================");
+			System.out.println("보물 상자가 열렸다!!!");
 		}
-		else if (FirstButton==2) {
-			if(SecondButton==1) {
-				if (ThirdButton==3) {
-					System.out.println("==============================");
-					System.out.println("보물 상자가 열렸다!!!");
-				} else {System.out.println("보물 상자는 열리지 않았습니다.");}
-			}
-			else if (SecondButton==3) {
-				if(ThirdButton==1) {
-					System.out.println("==============================");
-					System.out.println("보물 상자가 열렸다!!!");
-				} else {System.out.println("보물 상자는 열리지 않았습니다.");}
-			} else {System.out.println("보물 상자는 열리지 않았습니다.");}
+		else if (FirstButton != SecondButton && SecondButton != ThirdButton && FirstButton != ThirdButton) {
+			System.out.println("==============================");
+			System.out.println("보물 상자가 열렸다!!!");
 		}
-		else if (FirstButton==3) {
-			if(SecondButton==1) {
-				if (ThirdButton==2) {
-					System.out.println("==============================");
-					System.out.println("보물 상자가 열렸다!!!");
-				} else {System.out.println("보물 상자는 열리지 않았습니다.");}
-			}
-			else if (SecondButton==2) {
-				if(ThirdButton==1) {
-					System.out.println("==============================");
-					System.out.println("보물 상자가 열렸다!!!");
-				} else {System.out.println("보물 상자는 열리지 않았습니다.");}
-			} else {System.out.println("보물 상자는 열리지 않았습니다.");}
+		else {
+			System.out.println("보물 상자는 열리지 않았습니다.");
 		}
 	}
 
