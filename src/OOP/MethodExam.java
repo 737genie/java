@@ -6,18 +6,22 @@ public class MethodExam {
 	
 	public static void gugu() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("1~15 사이의 숫자를 입력해주세요.");
-		int num = sc.nextInt();
-		
-		if(num>15 || num<1) {
-			System.out.println("숫자를 다시 입력해주세요.");
-		} else {
-			for(int i=1; i<10; i++) {
-				System.out.println(num+" * "+i+" = "+num*i);
-				}
+		while(true) {
+			System.out.println("1~15 사이의 숫자를 입력해주세요.");
+			int num = sc.nextInt();
+			
+			if(num>15 || num<1) {
+				System.out.println("숫자를 다시 입력해주세요.");
+			} else {
+				for(int i=1; i<10; i++) {
+					System.out.println(num+" * "+i+" = "+num*i);
+				} break;
+		}
 			
 		}
 	}
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// 메서드 : 클래스 안에 정의된 함수
@@ -29,7 +33,7 @@ public class MethodExam {
 		// 사용자로부터 1-15 숫자를 입력받아
 		// 입력받은 숫자의 1~9까지의 곱셈 결과를 출력하는 코드 작성
 		
-		//MethodExam.gugu();
+		// MethodExam.gugu();
 		
 		// 메서드를 쓰는 이유: 재사용성 증대를 위해
 		// 사용자가 호출하지 않는 이상 먼저 동작하진 않음
@@ -65,6 +69,21 @@ public class MethodExam {
 		
 		int result = returntest(return2());
 		System.out.println(result);
+		// 전역 변수, 전역 메서드 
+		// 전역 변수(클래스 변수, 정적 변수) - 인스턴스가 생기지 않아도 공용으로 쓸 수 있음
+		// -> 메인 메서드 내부에서는 사용 불가 (1.8)
+		
+		// 전역 메서드
+		// 메인을 제외한 static 키워드가 붙어있는 메서드
+		// 전역 변수와 마찬가지로 클래스만 지칭되면 언제 어디서나 쓸 수 있음
+		// -> 인스턴스 없어도 공용으로 쓸 수 있다는 것
+		// 추후 배울 접근 제어자도 영향을 끼침
+		
+		// 메인 메서드
+		// 자바 런타임이 자동으로 호출하는 메서드
+		// -> 프로그램 실행 시 가장 먼저 수행하는 메서드!!!
+		// 
+		
 	
 	}
 	
