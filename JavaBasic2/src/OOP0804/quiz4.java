@@ -26,7 +26,7 @@ abstract class SecurityGuard extends PartySecuritySystem {
 	
 }
 
-class PartyManager extends PartySecuritySystem {
+abstract class PartyManager extends PartySecuritySystem {
 	String music;
 	
 	void authenticate() {
