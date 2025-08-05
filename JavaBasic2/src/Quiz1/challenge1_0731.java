@@ -1,6 +1,6 @@
 package Quiz1;
 
-public class challange1_0731 {
+public class challenge1_0731 {
 
 	public static void main(String[] args) {
 		// 카피바라의 스파 예약 관리

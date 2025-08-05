@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class challange_0730 {
+public class challenge_0730 {
 
 	public static void main(String[] args) {
 		// 캐릭터 마을 무역왕
