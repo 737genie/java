@@ -54,10 +54,20 @@ public class InterfaceExam {
 		// 3. default라는 키워드가 따로 있음
 		//
 		
+		// 인터페이스의 장점
+		// 1. 재사용성 2. 유지보수성 (네이밍이 잘 된 경우) 3. 표준화 
+		// 4. 개발시간 단축 유도 
+		// 5. 관계없는 클래스들간의 간접적 관계 형성 가능(다중상속 구현)
+		
+		
+		
 //				== 카피바라 온천으로 배달 업무를 시작합니다! ==
 //		바쁘개 바쁘개이(가) 헐레벌떡 카피바라 온천(으)로 배달을 완료했습니다! (번개 택배)
 //		급하냥 급하냥이(가) 가장 빠른 길로 카피바라 온천에 배달 완료! (번개 택배)
 		
+		// BusyDog과 HastyCat은 인터페이스로 묶여있으므로
+		// 해당 인터페이스 Deliver를 상위 클래스라고 생각하고 선언하는 방식도 가능
+//      List<Deliver> workers = new Deliver[2]; > 이렇게 쓸 수도 있음
         Deliver[] workers = new Deliver[2];
         workers[0] = new BusyDog("바쁘개");
         workers[1] = new HastyCat("급하냥");
