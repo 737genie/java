@@ -1,5 +1,7 @@
 package Util;
 
+import java.util.List;
+
 public class StringExam {
 
 	public static void main(String[] args) {
@@ -50,7 +52,7 @@ public class StringExam {
 //		System.out.println(sb.replace(1, 4, noname)); //t집에st테스트
 		
 		
-		// * String 전용 -> 가변형에는 없음
+		// * String 전용 (가변형에는 없음)
 		// .toUpperCase, toLowerCase : 영문 대소문자 전환
 		String sb3 = "testabcd";
 		System.out.println(sb3.toUpperCase());
@@ -59,6 +61,32 @@ public class StringExam {
 		// .setCharAt(해당인덱스, '문자') - 해당 인덱스에 있는 문자를 변경하고 싶을 때 사용
 		sb2.setCharAt(0, 'A'); //Aest2테스트2
 		System.out.println(sb2);
+		
+		
+		// 가변형 String 언제 써야하나?
+		// = 스레드 활용 환경이 아니라면 > Builder
+		// = 멀티스레드 환경에서는 > Buffer가 유리함
+		
+		// StringBuilder 활용 예시
+		
+		// 시나리오 - 바쁘개의 일일 배송 보고서 만들기
+		// 하루의 배송 내역을 정리하여 하나의 긴 문자열로 보고서 제출이 필요한 상황
+		
+		List<String> deliveries = 
+				List.of("뼈다구", "참치캔", "무지개 꿀단지", "오예스"); 
+		// .of() 리스트에 한번에 담을 수 있다
+		
+		StringBuilder report = new StringBuilder("=== 일일 배송 보고서 ===");
+		for(String item: deliveries) {
+			report.append("\r - 상품명 : ").append(item).append(" - 배송완료");
+		}
+		
+		String finalRepo = report.toString();
+		System.out.println(finalRepo);
+		System.out.println(report);
+		
+		
+		
 		
 	}
 
