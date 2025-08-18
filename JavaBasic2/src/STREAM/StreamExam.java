@@ -180,7 +180,26 @@ public class StreamExam {
         
         // 최종연산 : 스트림의 끝에서 최종 결과물을 만들어내는 과정
         // -> 최종연산들이 실행되어야지 중간연산들이 실행되는 구조
-        							
+        
+        // 결과 만들기
+        // Collecting
+        // collect : 스트림의 모든 데이터를 모아 원하는 형태로 포장하는
+        //           일종의 만능 포장기
+        
+        //List<String> name1 = stream.collect(Collectors.toList("테스트1", "테스트2"));
+        
+        // 계산(Calculating)
+        // 계산과 관련한 스트림 메서드들이 존재
+        // count, sum, average, max, min
+	        
+	    // 검사 (boolean으로 반환)
+	    // anyMatch - 조건에 맞는 데이터가 하나라도 있는가?
+        // allMatch - 모든 데이터가 조건을 만족하는가?
+        // noneMatch - 조건을 만족하는 데이터가 하나도 없는가?
+	    
+	        
+	        
+	        
         							
         							
             
