@@ -3,6 +3,34 @@ package Util;
 import java.util.ArrayList;
 import java.util.List;
 
+class test {
+	private String name;
+	private String age;
+	public test(String name, String age) {
+		this.name = name;
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	
+	@Override // 현업에서는 디버깅 용
+	public String toString() {
+		return name+" "+age;
+	}
+	
+	
+}
+
 public class Object {
 
 	// 유틸리티 클래스 
@@ -54,7 +82,11 @@ public class Object {
 		System.out.println(obj1.hashCode());
 		System.out.println(obj2.hashCode()); // 위랑 다름
 		
-		// 3. getClass() : 클래스 정보를 리턴하는 메서드
+		test t1 = new test("아무거나", "10");
+//		System.out.println(t1); // toString override전 / 해시코드값 나옴
+		System.out.println(t1); // toString override후
+		
+		// 3. getClass() : 클래스 정보를 리턴하는 메서드 - 객체가 어느 클래스 소속인가를 얘기함 String, Integer...
 		// 3-1. getName() : java.lang.String
 		// 3-2. getSimpleName() : String
 		
